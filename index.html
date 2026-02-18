@@ -6,129 +6,83 @@
     <title>Bc. Petra Grauerová | Business Central Developer | Portfolio</title>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
-        :root {
-            --primary: #0078d4;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-        }
+        :root { --primary: #0078d4; --bg: #0f172a; --card-bg: #1e293b; --text-main: #f8fafc; --text-muted: #94a3b8; --accent: #38bdf8; }
         body { font-family: 'Inter', sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: var(--bg); color: var(--text-main); }
-        
-        /* Elegantní subtilní banner - nízký kontrast, jemné spoje */
         header { 
-            text-align: left; 
-            margin-bottom: 40px; 
-            border-left: 5px solid var(--primary); 
-            padding: 80px 50px;
+            text-align: left; margin-bottom: 40px; border-left: 5px solid var(--primary); padding: 80px 45px;
             background-color: #020617;
-            /* Použití jemnějšího lineárního přechodu pro potlačení kontrastu */
-            background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.88)), 
+            /* TADY JE TEN SPRÁVNÝ DLOUHÝ ODKAZ: */
+            background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
                               url('https://images.unsplash.com');
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            background-size: cover; background-position: center center; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);
         }
-        
-        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; color: #fff; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
-        .subtitle { font-size: 1.25rem; color: var(--accent); font-weight: 500; margin-top: 8px; opacity: 0.9; }
-        
+        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; color: #fff; text-shadow: 1px 1px 10px rgba(0,0,0,0.5); }
+        .subtitle { font-size: 1.25rem; color: var(--accent); font-weight: 500; margin-top: 8px; }
         section { background: var(--card-bg); padding: 30px; border-radius: 15px; margin-bottom: 25px; border: 1px solid #334155; }
         h2 { color: var(--primary); font-size: 1.3rem; margin-top: 0; display: flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: 1px; }
         h2::before { content: '>'; color: var(--accent); font-family: monospace; font-weight: bold; }
-        
         .tag { background: rgba(0, 120, 212, 0.12); color: var(--accent); padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; display: inline-block; margin: 3px; border: 1px solid rgba(56, 189, 248, 0.2); }
         .exp-item { margin-bottom: 25px; padding-left: 15px; border-left: 2px solid #334155; }
-        .exp-date { color: var(--accent); font-size: 0.9rem; font-weight: 600; opacity: 0.8; }
+        .exp-date { color: var(--accent); font-size: 0.9rem; font-weight: 600; }
         .exp-title { font-weight: 700; font-size: 1.15rem; display: block; margin-bottom: 5px; color: #fff; }
-        
-        .lang-text { margin-bottom: 10px; }
         .en-text { color: var(--text-muted); font-size: 0.95rem; font-style: italic; border-top: 1px solid #2d3748; padding-top: 8px; margin-top: 8px; display: block; }
-        
-        .btn { background: var(--primary); color: white !important; padding: 16px 32px; text-decoration: none; border-radius: 10px; font-weight: 700; display: inline-block; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); box-shadow: 0 8px 20px rgba(0, 120, 212, 0.3); }
-        .btn:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 12px 25px rgba(0, 120, 212, 0.5); }
-        footer { text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: 40px; padding-bottom: 20px; }
+        .btn { background: var(--primary); color: white !important; padding: 16px 32px; text-decoration: none; border-radius: 10px; font-weight: 700; display: inline-block; transition: 0.3s; box-shadow: 0 8px 20px rgba(0, 120, 212, 0.3); }
+        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+        footer { text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: 40px; }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Bc. Petra Grauerová</h1>
-    <div class="subtitle">D365 Business Central Developer & Software Engineer</div>
-</header>
-
-<section>
-    <h2>Profil / Profile</h2>
-    <div class="lang-text">
-        Absolventka <strong>Aplikované informatiky na UPOL</strong> se specializací na vývoj ERP systémů <strong>Microsoft Dynamics 365 Business Central</strong>.
-        <span class="en-text">Applied Computer Science graduate (BSc) specialized in Microsoft Dynamics 365 Business Central development.</span>
-    </div>
-</section>
-
-<section>
-    <h2>IT Praxe / IT Experience</h2>
-    <div class="exp-item">
-        <span class="exp-date">2025 - Present</span>
-        <span class="exp-title">IT Freelancer | D365 Business Central Developer</span>
+    <header>
+        <h1>Bc. Petra Grauerová</h1>
+        <div class="subtitle">IT vývojář & Programátor | Software Engineer & D365 BC Developer</div>
+    </header>
+    <section>
+        <h2>Profil / Profile</h2>
         <div class="lang-text">
-            Upgrade Business Central v14 na v25, vývoj rozšíření v programovacím jazyce AL (Policy Administration, CRM).
-            <span class="en-text">Upgrade BC v14 to v25, development of AL extensions (Policy Administration, CRM).</span>
+            Absolventka <strong>Aplikované informatiky na UPOL</strong> se specializací na vývoj ERP systémů <strong>Microsoft Dynamics 365 Business Central</strong>.
+            <span class="en-text">Applied Computer Science graduate (BSc) specialized in Microsoft Dynamics 365 Business Central development.</span>
         </div>
-    </div>
-    <div class="exp-item">
-        <span class="exp-date">2022 - 2025</span>
-        <span class="exp-title">Prodware Czech Republic | D365 Business Central Developer</span>
-        <div class="lang-text">
-            Správa ERP řešení, migrace 50+ úprav (C/AL na AL), optimalizace RDLC reportů.
-            <span class="en-text">ERP Solution Management, migration of 50+ customizations, RDLC report optimization.</span>
+    </section>
+    <section>
+        <h2>IT Praxe / IT Experience</h2>
+        <div class="exp-item">
+            <span class="exp-date">2025 - Present</span>
+            <span class="exp-title">IT Freelancer | D365 Business Central Developer</span>
+            <div class="lang-text">Upgrade Business Central v14 na v25, vývoj rozšíření v jazyce AL (Policy Administration, CRM).
+            <span class="en-text">Upgrade BC v14 to v25, development of AL extensions (Policy Administration, CRM).</span></div>
         </div>
-    </div>
-</section>
-
-<section>
-    <h2>Vzdělání / Education</h2>
-    <div class="exp-item">
-        <span class="exp-date">2019 - 2023</span>
-        <span class="exp-title">Univerzita Palackého v Olomouci (UPOL)</span>
-        <div class="lang-text">
-            <strong>Bakalářský obor: Aplikovaná informatika</strong><br>
-            Státní zkoušky: Algoritmy a programování, Softwarové inženýrství, Informační technologie.
-            <span class="en-text">Applied Informatics (BSc). State exams: Algorithms and Programming, Software Engineering, IT.</span>
+        <div class="exp-item">
+            <span class="exp-date">2022 - 2025</span>
+            <span class="exp-title">Prodware Czech Republic | D365 Business Central Developer</span>
+            <div class="lang-text">Správa ERP řešení, migrace 50+ úprav (C/AL na AL), optimalizace RDLC reportů.
+            <span class="en-text">ERP Solution Management, migration of 50+ customizations, RDLC report optimization.</span></div>
         </div>
-    </div>
-</section>
-
-<section>
-    <h2>Předchozí praxe / Logistics Experience</h2>
-    <div class="exp-item">
-        <span class="exp-date">2002 - 2022</span>
-        <div class="lang-text">
-            Dlouholetá praxe v oblasti transportu a logistiky. Plánování dopravy a fakturace v systému HELIOS Orange.
-            <span class="en-text">Extensive experience in transport coordination, dispatching and logistics accounting. Work with HELIOS Orange ERP.</span>
+    </section>
+    <section>
+        <h2>Vzdělání / Education</h2>
+        <div class="exp-item">
+            <span class="exp-date">2019 - 2023</span>
+            <span class="exp-title">Univerzita Palackého v Olomouci (UPOL)</span>
+            <div class="lang-text"><strong>Bakalářský obor: Aplikovaná informatika</strong><br>Státní zkoušky: Algoritmy a programování, Softwarové inženýrství, Informační technologie.
+            <span class="en-text">Applied Informatics (BSc). State exams: Algorithms and Programming, Software Engineering, IT.</span></div>
         </div>
+    </section>
+    <section>
+        <h2>Předchozí praxe / Logistics Experience</h2>
+        <div class="exp-item">
+            <span class="exp-date">2002 - 2022</span>
+            <div class="lang-text">Dlouholetá praxe v oblasti transportu a logistiky. Plánování dopravy a fakturace v systému HELIOS Orange.
+            <span class="en-text">Extensive experience in transport coordination, dispatching and logistics accounting. Work with HELIOS Orange ERP.</span></div>
+        </div>
+    </section>
+    <section>
+        <h2>Tech Stack</h2>
+        <div><span class="tag">AL Language</span> <span class="tag">C/AL</span> <span class="tag">D365 Business Central (v14-v25)</span> <span class="tag">Docker</span> <span class="tag">SQL Server</span> <span class="tag">VS Code</span> <span class="tag">GitHub</span> <span class="tag">Jira</span></div>
+    </section>
+    <div style="text-align: center; padding: 50px 0;">
+        <p style="margin-bottom: 25px; color: var(--text-muted); font-size: 1.1rem;">Máte zájem o spolupráci? / Looking for a BC Developer?</p>
+        <a href="https://www.linkedin.com/in/petragrauerova" target="_blank" class="btn">Connect via LinkedIn</a>
     </div>
-</section>
-
-<section>
-    <h2>Tech Stack</h2>
-    <div>
-        <span class="tag">AL Language</span> <span class="tag">C/AL</span>
-        <span class="tag">D365 Business Central (v14-v25)</span>
-        <span class="tag">Docker</span> <span class="tag">SQL Server</span>
-        <span class="tag">VS Code</span> <span class="tag">GitHub</span> <span class="tag">Jira</span>
-    </div>
-</section>
-
-<div style="text-align: center; padding: 50px 0;">
-    <p style="margin-bottom: 25px; color: var(--text-muted); font-size: 1.1rem;">Máte zájem o spolupráci? / Looking for a BC Developer?</p>
-    <a href="https://www.linkedin.com/in/petragrauerova" target="_blank" class="btn">Connect via LinkedIn</a>
-</div>
-
-<footer>
-    <p>© 2025 • Bc. Petra Grauerová • Built with HTML/CSS</p>
-</footer>
-
+    <footer><p>© 2025 • Bc. Petra Grauerová • Built with HTML/CSS</p></footer>
 </body>
 </html>
